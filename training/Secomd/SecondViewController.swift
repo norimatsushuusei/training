@@ -39,6 +39,6 @@ extension SecondViewController {
     func setLayout() {
         button.layer.borderWidth = 1
         button.layer.cornerRadius = 10
-        button.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        button.layer.borderColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
     }
 }

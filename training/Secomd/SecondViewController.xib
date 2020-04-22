@@ -31,7 +31,7 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="x3t-L6-yue">
-                    <rect key="frame" x="20" y="424" width="374" height="30"/>
+                    <rect key="frame" x="20" y="355" width="374" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="プロフィールを作成">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>

@@ -15,11 +15,13 @@ extension TopMainTableViewCellDelegate {
 // MARK: - Property
 class TopMainTableViewCell: BaseTableViewCell {
     weak var delegate: TopMainTableViewCellDelegate? = nil
+    @IBOutlet weak var iconView: UIImageView!
 }
 // MARK: - Life cycle
 extension TopMainTableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
+        setLayout()
     }
 }
 // MARK: - Protocol
@@ -27,4 +29,7 @@ extension TopMainTableViewCell {
 }
 // MARK: - method
 extension TopMainTableViewCell {
+    func setLayout(){
+        iconView.layer.cornerRadius = iconView.frame.height / 2
+    }
 }

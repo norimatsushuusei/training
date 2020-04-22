@@ -15,11 +15,13 @@ extension NextMainViewDelegate {
 // MARK: - Property
 class NextMainView: BaseView {
     weak var delegate: NextMainViewDelegate? = nil
+    @IBOutlet weak var iconView: UIImageView!
 }
 // MARK: - Life cycle
 extension NextMainView {
     override func awakeFromNib() {
         super.awakeFromNib()
+        setLayout()
     }
 }
 // MARK: - Protocol
@@ -27,4 +29,7 @@ extension NextMainView {
 }
 // MARK: - method
 extension NextMainView {
+    func setLayout(){
+        iconView.layer.cornerRadius = iconView.frame.height / 2
+    }
 }
