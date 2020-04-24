@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NextMainView" customModule="training" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionLabel" destination="rkv-O8-kMC" id="0NV-jM-Ohx"/>
                 <outlet property="iconView" destination="kiG-gd-s7b" id="3eK-jD-JHU"/>
             </connections>
         </placeholder>
