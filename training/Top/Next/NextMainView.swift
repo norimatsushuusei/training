@@ -16,6 +16,7 @@ extension NextMainViewDelegate {
 class NextMainView: BaseView {
     weak var delegate: NextMainViewDelegate? = nil
     @IBOutlet weak var iconView: UIImageView!
+    @IBOutlet weak var descriptionLabel: UILabel!
 }
 // MARK: - Life cycle
 extension NextMainView {

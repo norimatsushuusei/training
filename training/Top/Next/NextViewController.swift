@@ -11,6 +11,9 @@ import PGFramework
 // MARK: - Property
 class NextViewController: BaseViewController {
     @IBOutlet weak var headerView: HeaderView!
+    
+    @IBOutlet weak var nextMainView: NextMainView!
+    var postModel: PostModel = PostModel()
 }
 // MARK: - Life cycle
 extension NextViewController {
@@ -18,12 +21,15 @@ extension NextViewController {
         super.loadView()
         setDelegate()
         setHeaderView()
+        
+     //   print("DESC: ",postModel.description)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        setLabel()
     }
 }
 // MARK: - Protocol
@@ -41,5 +47,8 @@ extension NextViewController {
     func setHeaderView(){
         headerView.setLeft(text: "＜", fontSize: 18)
         headerView.setCenter(text: "投稿詳細", fontSize: 18)
+    }
+    func setLabel(){
+        nextMainView.descriptionLabel.text = postModel.description
     }
 }

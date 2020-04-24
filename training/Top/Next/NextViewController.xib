@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NextViewController" customModule="training" customModuleProvider="target">
             <connections>
                 <outlet property="headerView" destination="KFJ-sw-eaw" id="q9T-MJ-VPI"/>
+                <outlet property="nextMainView" destination="yOJ-Xh-OHZ" id="Grl-re-Fxn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
