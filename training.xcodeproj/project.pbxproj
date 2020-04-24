@@ -27,6 +27,12 @@
 		5FCC8658244EC05F008CD025 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC8656244EC05F008CD025 /* NextViewController.xib */; };
 		5FCC865B244ED4C6008CD025 /* NextMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCC8659244ED4C6008CD025 /* NextMainView.swift */; };
 		5FCC865C244ED4C6008CD025 /* NextMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC865A244ED4C6008CD025 /* NextMainView.xib */; };
+		5FCC86B02450264D008CD025 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC86AF2450264D008CD025 /* GoogleService-Info.plist */; };
+		5FCC86B424502AFF008CD025 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCC86B224502AFF008CD025 /* ThirdViewController.swift */; };
+		5FCC86B524502AFF008CD025 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC86B324502AFF008CD025 /* ThirdViewController.xib */; };
+		5FCC86B824502D3E008CD025 /* ThirdMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCC86B624502D3E008CD025 /* ThirdMainView.swift */; };
+		5FCC86B924502D3E008CD025 /* ThirdMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC86B724502D3E008CD025 /* ThirdMainView.xib */; };
+		5FCC86BC24504372008CD025 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCC86BB24504372008CD025 /* PostModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +58,12 @@
 		5FCC8656244EC05F008CD025 /* NextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
 		5FCC8659244ED4C6008CD025 /* NextMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMainView.swift; sourceTree = "<group>"; };
 		5FCC865A244ED4C6008CD025 /* NextMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NextMainView.xib; sourceTree = "<group>"; };
+		5FCC86AF2450264D008CD025 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5FCC86B224502AFF008CD025 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		5FCC86B324502AFF008CD025 /* ThirdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		5FCC86B624502D3E008CD025 /* ThirdMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdMainView.swift; sourceTree = "<group>"; };
+		5FCC86B724502D3E008CD025 /* ThirdMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdMainView.xib; sourceTree = "<group>"; };
+		5FCC86BB24504372008CD025 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		628835466DE159D72D891D50 /* Pods-training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-training.debug.xcconfig"; path = "Target Support Files/Pods-training/Pods-training.debug.xcconfig"; sourceTree = "<group>"; };
 		AB1A9F80FD4F53F5763E199A /* Pods_training.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_training.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,6 +110,7 @@
 		5FCC8620244EA841008CD025 /* training */ = {
 			isa = PBXGroup;
 			children = (
+				5FCC86BA245039F4008CD025 /* Model */,
 				5FCC863E244EB3AF008CD025 /* Secomd */,
 				5FCC8635244EB366008CD025 /* Top */,
 				5FCC8621244EA841008CD025 /* AppDelegate.swift */,
@@ -106,6 +119,7 @@
 				5FCC862A244EA846008CD025 /* Assets.xcassets */,
 				5FCC862C244EA846008CD025 /* LaunchScreen.storyboard */,
 				5FCC862F244EA846008CD025 /* Info.plist */,
+				5FCC86AF2450264D008CD025 /* GoogleService-Info.plist */,
 			);
 			path = training;
 			sourceTree = "<group>";
@@ -113,6 +127,7 @@
 		5FCC8635244EB366008CD025 /* Top */ = {
 			isa = PBXGroup;
 			children = (
+				5FCC86B124502AE9008CD025 /* Third */,
 				5FCC8653244EC041008CD025 /* Next */,
 				5FCC8636244EB37D008CD025 /* TopViewController.swift */,
 				5FCC8637244EB37D008CD025 /* TopViewController.xib */,
@@ -144,6 +159,25 @@
 				5FCC865A244ED4C6008CD025 /* NextMainView.xib */,
 			);
 			path = Next;
+			sourceTree = "<group>";
+		};
+		5FCC86B124502AE9008CD025 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				5FCC86B224502AFF008CD025 /* ThirdViewController.swift */,
+				5FCC86B324502AFF008CD025 /* ThirdViewController.xib */,
+				5FCC86B624502D3E008CD025 /* ThirdMainView.swift */,
+				5FCC86B724502D3E008CD025 /* ThirdMainView.xib */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		5FCC86BA245039F4008CD025 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FCC86BB24504372008CD025 /* PostModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A651C6A865EB95CB539F9E71 /* Frameworks */ = {
@@ -216,13 +250,16 @@
 			files = (
 				5FCC8639244EB37D008CD025 /* TopViewController.xib in Resources */,
 				5FCC864E244EB5E9008CD025 /* SecondMainView.xib in Resources */,
+				5FCC86B524502AFF008CD025 /* ThirdViewController.xib in Resources */,
 				5FCC862E244EA846008CD025 /* LaunchScreen.storyboard in Resources */,
 				5FCC864A244EB5D2008CD025 /* SecondViewController.xib in Resources */,
+				5FCC86B924502D3E008CD025 /* ThirdMainView.xib in Resources */,
 				5FCC8652244EB881008CD025 /* TopMainTableViewCell.xib in Resources */,
 				5FCC862B244EA846008CD025 /* Assets.xcassets in Resources */,
 				5FCC8658244EC05F008CD025 /* NextViewController.xib in Resources */,
 				5FCC8629244EA841008CD025 /* Main.storyboard in Resources */,
 				5FCC865C244ED4C6008CD025 /* NextMainView.xib in Resources */,
+				5FCC86B02450264D008CD025 /* GoogleService-Info.plist in Resources */,
 				5FCC8646244EB5A2008CD025 /* TopMainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,9 +314,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FCC8651244EB881008CD025 /* TopMainTableViewCell.swift in Sources */,
+				5FCC86BC24504372008CD025 /* PostModel.swift in Sources */,
 				5FCC8657244EC05F008CD025 /* NextViewController.swift in Sources */,
+				5FCC86B424502AFF008CD025 /* ThirdViewController.swift in Sources */,
 				5FCC8638244EB37D008CD025 /* TopViewController.swift in Sources */,
 				5FCC864D244EB5E9008CD025 /* SecondMainView.swift in Sources */,
+				5FCC86B824502D3E008CD025 /* ThirdMainView.swift in Sources */,
 				5FCC865B244ED4C6008CD025 /* NextMainView.swift in Sources */,
 				5FCC8622244EA841008CD025 /* AppDelegate.swift in Sources */,
 				5FCC8624244EA841008CD025 /* SceneDelegate.swift in Sources */,

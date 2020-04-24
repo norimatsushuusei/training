@@ -11,31 +11,31 @@
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="362" id="YCU-Ks-WfX" customClass="TopMainTableViewCell" customModule="training" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="362"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YCU-Ks-WfX" id="c4v-6r-XBU">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YCU-Ks-WfX" id="c4v-6r-XBU">
                 <rect key="frame" x="0.0" y="0.0" width="414" height="362"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="norimatsu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBC-ZF-bQz">
-                        <rect key="frame" x="103" y="33" width="114" height="24"/>
+                        <rect key="frame" x="63" y="33" width="165" height="24"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gazou" translatesAutoresizingMaskIntoConstraints="NO" id="apd-6J-VlJ">
-                        <rect key="frame" x="0.0" y="76" width="414" height="220"/>
+                        <rect key="frame" x="0.0" y="65" width="414" height="220"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="220" id="oaD-dg-SIT"/>
                         </constraints>
                     </imageView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gazou" translatesAutoresizingMaskIntoConstraints="NO" id="QzP-X0-It9">
-                        <rect key="frame" x="9" y="22" width="86" height="46"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="QzP-X0-It9">
+                        <rect key="frame" x="20" y="22" width="35" height="35"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="86" id="GVv-wL-VQG"/>
-                            <constraint firstAttribute="height" constant="46" id="X1K-5d-f51"/>
+                            <constraint firstAttribute="height" constant="35" id="Wmy-FT-iV7"/>
+                            <constraint firstAttribute="width" secondItem="QzP-X0-It9" secondAttribute="height" multiplier="1:1" id="be3-1O-Acg"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ハリネズミ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGc-Ap-2gD">
-                        <rect key="frame" x="20" y="315" width="109" height="24"/>
+                        <rect key="frame" x="20" y="304" width="109" height="24"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -47,10 +47,10 @@
                     <constraint firstItem="GGc-Ap-2gD" firstAttribute="height" secondItem="apd-6J-VlJ" secondAttribute="height" multiplier="0.109091" id="Bwg-f7-g83"/>
                     <constraint firstItem="QzP-X0-It9" firstAttribute="top" secondItem="c4v-6r-XBU" secondAttribute="top" constant="22" id="G4G-gE-BBB"/>
                     <constraint firstItem="apd-6J-VlJ" firstAttribute="leading" secondItem="c4v-6r-XBU" secondAttribute="leading" id="Iqa-kg-Mc1"/>
-                    <constraint firstAttribute="trailing" secondItem="wBC-ZF-bQz" secondAttribute="trailing" constant="197" id="JVz-If-DM8"/>
+                    <constraint firstAttribute="trailing" secondItem="wBC-ZF-bQz" secondAttribute="trailing" constant="186" id="JVz-If-DM8"/>
                     <constraint firstItem="GGc-Ap-2gD" firstAttribute="top" secondItem="apd-6J-VlJ" secondAttribute="bottom" constant="19" id="VHY-ZH-nTb"/>
                     <constraint firstItem="apd-6J-VlJ" firstAttribute="top" secondItem="QzP-X0-It9" secondAttribute="bottom" constant="8" id="cQv-jY-Qof"/>
-                    <constraint firstItem="QzP-X0-It9" firstAttribute="leading" secondItem="c4v-6r-XBU" secondAttribute="leading" constant="9" id="ifU-Ba-Ha8"/>
+                    <constraint firstItem="QzP-X0-It9" firstAttribute="leading" secondItem="c4v-6r-XBU" secondAttribute="leading" constant="20" id="ifU-Ba-Ha8"/>
                     <constraint firstItem="wBC-ZF-bQz" firstAttribute="top" secondItem="c4v-6r-XBU" secondAttribute="top" constant="33" id="lYt-P1-R9Q"/>
                     <constraint firstAttribute="trailingMargin" secondItem="GGc-Ap-2gD" secondAttribute="trailing" constant="265" id="mlK-mg-pnm"/>
                     <constraint firstAttribute="trailing" secondItem="apd-6J-VlJ" secondAttribute="trailing" id="onH-SZ-Iwh"/>
@@ -59,12 +59,14 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="descriptionLabel" destination="GGc-Ap-2gD" id="M5v-UW-eZo"/>
                 <outlet property="iconView" destination="QzP-X0-It9" id="tb1-CZ-rdo"/>
             </connections>
             <point key="canvasLocation" x="130" y="72"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="cat" width="906" height="906"/>
         <image name="gazou" width="940" height="626"/>
     </resources>
 </document>
