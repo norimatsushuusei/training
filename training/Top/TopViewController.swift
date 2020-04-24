@@ -57,8 +57,9 @@ extension TopViewController {
         headerView.delegate = self
     }
     func setHeaderView(){
-        headerView.setRight(text: "投稿", fontSize: 16, color: #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1))
+        headerView.setRight(text: "投稿", fontSize: 18, color: #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1))
         headerView.setCenter(text: "Home", fontSize: 18, color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
+        headerView.setLeft(text: "")
     }
     func getModel() {
         PostModel.reads { (postModels) in
