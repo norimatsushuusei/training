@@ -19,12 +19,15 @@ extension TopViewController {
         super.loadView()
         setDelegate()
         setHeaderView()
+        
+
     }
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        getModel()
     }
 }
 // MARK: - Protocol
@@ -35,13 +38,30 @@ extension TopViewController :TopMainViewDelegate{
         animatorManager.navigationType = .slide_push
     }
 }
+
+extension TopViewController :HeaderViewDelegate{
+    func touchedRightButton(_ sender: UIButton) {
+        let thirdViewController = ThirdViewController()
+        navigationController?.pushViewController(thirdViewController, animated: true)
+        animatorManager.navigationType = .slide_push
+    }
+}
 // MARK: - method
 extension TopViewController {
     func setDelegate() {
         mainView.delegate = self
+        headerView.delegate = self
     }
     func setHeaderView(){
         headerView.setRight(text: "投稿", fontSize: 16, color: #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1))
         headerView.setCenter(text: "Home", fontSize: 18, color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
+    }
+    func getModel() {
+        PostModel.reads { (postModels) in
+        //    for postModel in postModels {
+          //      print("DESC: ",postModel.description)
+            //}
+            self.mainView.getModel(postModels: postModels)
+        }
     }
 }

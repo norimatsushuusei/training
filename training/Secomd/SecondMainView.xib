@@ -17,11 +17,11 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gazou" translatesAutoresizingMaskIntoConstraints="NO" id="LE6-zI-D8e">
-                    <rect key="frame" x="20" y="75" width="127" height="110"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="LE6-zI-D8e">
+                    <rect key="frame" x="20" y="75" width="110" height="110"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="110" id="A9E-D9-Ogt"/>
-                        <constraint firstAttribute="width" constant="127" id="SJG-xy-Cgb"/>
+                        <constraint firstAttribute="width" secondItem="LE6-zI-D8e" secondAttribute="height" multiplier="1:1" id="J6o-Vv-EIB"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ああああああああああ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67h-Zz-XNk">
@@ -52,6 +52,6 @@
         </view>
     </objects>
     <resources>
-        <image name="gazou" width="940" height="626"/>
+        <image name="cat" width="906" height="906"/>
     </resources>
 </document>

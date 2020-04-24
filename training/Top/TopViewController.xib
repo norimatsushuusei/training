@@ -19,6 +19,10 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K6A-64-X8J" customClass="TopMainView" customModule="training" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDF-fO-Wjj" customClass="HeaderView" customModule="PGFramework">
                     <rect key="frame" x="0.0" y="44" width="414" height="48"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -26,20 +30,16 @@
                         <constraint firstAttribute="height" constant="48" id="zVI-YU-8pr"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K6A-64-X8J" customClass="TopMainView" customModule="training" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="92" width="414" height="770"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="dDF-fO-Wjj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8p8-YY-c9c"/>
-                <constraint firstItem="K6A-64-X8J" firstAttribute="top" secondItem="dDF-fO-Wjj" secondAttribute="bottom" id="PRF-Z0-FDl"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="K6A-64-X8J" secondAttribute="trailing" id="RTL-G0-m0C"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dDF-fO-Wjj" secondAttribute="trailing" id="b2j-aE-RQy"/>
-                <constraint firstItem="dDF-fO-Wjj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dbK-in-Xqo"/>
-                <constraint firstItem="K6A-64-X8J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qqO-Z5-iJJ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="K6A-64-X8J" secondAttribute="bottom" id="sCJ-Am-XMo"/>
+                <constraint firstItem="K6A-64-X8J" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="0nd-7l-R4B"/>
+                <constraint firstItem="K6A-64-X8J" firstAttribute="top" secondItem="dDF-fO-Wjj" secondAttribute="bottom" id="3PX-oY-ZNy"/>
+                <constraint firstItem="K6A-64-X8J" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="8AA-dz-k0f"/>
+                <constraint firstItem="dDF-fO-Wjj" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="mMx-gM-Xm9"/>
+                <constraint firstItem="dDF-fO-Wjj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sJb-Pd-GSy"/>
+                <constraint firstItem="K6A-64-X8J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uU0-uH-Woa"/>
+                <constraint firstItem="dDF-fO-Wjj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xwG-TX-4if"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="139" y="127"/>

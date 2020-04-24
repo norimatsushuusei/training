@@ -16,6 +16,7 @@ extension TopMainTableViewCellDelegate {
 class TopMainTableViewCell: BaseTableViewCell {
     weak var delegate: TopMainTableViewCellDelegate? = nil
     @IBOutlet weak var iconView: UIImageView!
+    @IBOutlet weak var descriptionLabel: UILabel!
 }
 // MARK: - Life cycle
 extension TopMainTableViewCell {
@@ -31,5 +32,8 @@ extension TopMainTableViewCell {
 extension TopMainTableViewCell {
     func setLayout(){
         iconView.layer.cornerRadius = iconView.frame.height / 2
+    }
+    func updateCell(postModel: PostModel) {
+        descriptionLabel.text = postModel.description
     }
 }
