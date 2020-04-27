@@ -56,7 +56,6 @@
                 <constraint firstItem="QCh-Sh-au3" firstAttribute="top" secondItem="kiG-gd-s7b" secondAttribute="bottom" constant="22" id="O4x-Ge-tAN"/>
                 <constraint firstItem="QCh-Sh-au3" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="XZf-Vd-jrX"/>
                 <constraint firstItem="So4-bC-On2" firstAttribute="leading" secondItem="kiG-gd-s7b" secondAttribute="trailing" constant="20" id="fFS-4M-lmG"/>
-                <constraint firstItem="kiG-gd-s7b" firstAttribute="height" secondItem="QCh-Sh-au3" secondAttribute="height" multiplier="0.190045" id="oov-6u-DSs"/>
                 <constraint firstItem="kiG-gd-s7b" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="11" id="tQI-rn-E8M"/>
                 <constraint firstItem="kiG-gd-s7b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="y0e-bf-CHD"/>
             </constraints>

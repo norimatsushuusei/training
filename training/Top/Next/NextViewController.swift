@@ -11,8 +11,9 @@ import PGFramework
 // MARK: - Property
 class NextViewController: BaseViewController {
     @IBOutlet weak var headerView: HeaderView!
-    
     @IBOutlet weak var nextMainView: NextMainView!
+    
+    
     var postModel: PostModel = PostModel()
 }
 // MARK: - Life cycle
@@ -38,6 +39,16 @@ extension NextViewController :HeaderViewDelegate{
         navigationController?.popViewController(animated: true)
         animatorManager.navigationType = .slide_pop
     }
+    func touchedRightButton(_ sender: UIButton) {
+        let editViewController = EditViewController()
+        editViewController.postModel = postModel
+        editViewController.modalPresentationStyle = .fullScreen
+        present(editViewController, animated: true, completion: nil)
+      //  present(editViewController, animated: true) {
+      //     print("遷移成功")
+      // }
+        
+    }
 }
 // MARK: - method
 extension NextViewController {
@@ -47,6 +58,9 @@ extension NextViewController {
     func setHeaderView(){
         headerView.setLeft(text: "＜", fontSize: 18)
         headerView.setCenter(text: "投稿詳細", fontSize: 18)
+        if let image = UIImage(named: "edit") {
+            headerView.setRight(image: image)
+        }
     }
     func setLabel(){
         nextMainView.descriptionLabel.text = postModel.description

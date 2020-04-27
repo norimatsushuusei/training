@@ -33,6 +33,10 @@
 		5FCC86B824502D3E008CD025 /* ThirdMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCC86B624502D3E008CD025 /* ThirdMainView.swift */; };
 		5FCC86B924502D3E008CD025 /* ThirdMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC86B724502D3E008CD025 /* ThirdMainView.xib */; };
 		5FCC86BC24504372008CD025 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCC86BB24504372008CD025 /* PostModel.swift */; };
+		5FCC870824567BA8008CD025 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCC870624567BA8008CD025 /* EditViewController.swift */; };
+		5FCC870924567BA8008CD025 /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC870724567BA8008CD025 /* EditViewController.xib */; };
+		5FCC870C24567BDE008CD025 /* EditMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCC870A24567BDE008CD025 /* EditMainView.swift */; };
+		5FCC870D24567BDE008CD025 /* EditMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC870B24567BDE008CD025 /* EditMainView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +68,10 @@
 		5FCC86B624502D3E008CD025 /* ThirdMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdMainView.swift; sourceTree = "<group>"; };
 		5FCC86B724502D3E008CD025 /* ThirdMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdMainView.xib; sourceTree = "<group>"; };
 		5FCC86BB24504372008CD025 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		5FCC870624567BA8008CD025 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		5FCC870724567BA8008CD025 /* EditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
+		5FCC870A24567BDE008CD025 /* EditMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMainView.swift; sourceTree = "<group>"; };
+		5FCC870B24567BDE008CD025 /* EditMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditMainView.xib; sourceTree = "<group>"; };
 		628835466DE159D72D891D50 /* Pods-training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-training.debug.xcconfig"; path = "Target Support Files/Pods-training/Pods-training.debug.xcconfig"; sourceTree = "<group>"; };
 		AB1A9F80FD4F53F5763E199A /* Pods_training.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_training.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -127,6 +135,7 @@
 		5FCC8635244EB366008CD025 /* Top */ = {
 			isa = PBXGroup;
 			children = (
+				5FCC870524567B90008CD025 /* Edit */,
 				5FCC86B124502AE9008CD025 /* Third */,
 				5FCC8653244EC041008CD025 /* Next */,
 				5FCC8636244EB37D008CD025 /* TopViewController.swift */,
@@ -178,6 +187,17 @@
 				5FCC86BB24504372008CD025 /* PostModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5FCC870524567B90008CD025 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				5FCC870624567BA8008CD025 /* EditViewController.swift */,
+				5FCC870724567BA8008CD025 /* EditViewController.xib */,
+				5FCC870A24567BDE008CD025 /* EditMainView.swift */,
+				5FCC870B24567BDE008CD025 /* EditMainView.xib */,
+			);
+			path = Edit;
 			sourceTree = "<group>";
 		};
 		A651C6A865EB95CB539F9E71 /* Frameworks */ = {
@@ -254,7 +274,9 @@
 				5FCC862E244EA846008CD025 /* LaunchScreen.storyboard in Resources */,
 				5FCC864A244EB5D2008CD025 /* SecondViewController.xib in Resources */,
 				5FCC86B924502D3E008CD025 /* ThirdMainView.xib in Resources */,
+				5FCC870924567BA8008CD025 /* EditViewController.xib in Resources */,
 				5FCC8652244EB881008CD025 /* TopMainTableViewCell.xib in Resources */,
+				5FCC870D24567BDE008CD025 /* EditMainView.xib in Resources */,
 				5FCC862B244EA846008CD025 /* Assets.xcassets in Resources */,
 				5FCC8658244EC05F008CD025 /* NextViewController.xib in Resources */,
 				5FCC8629244EA841008CD025 /* Main.storyboard in Resources */,
@@ -313,12 +335,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FCC870824567BA8008CD025 /* EditViewController.swift in Sources */,
 				5FCC8651244EB881008CD025 /* TopMainTableViewCell.swift in Sources */,
 				5FCC86BC24504372008CD025 /* PostModel.swift in Sources */,
 				5FCC8657244EC05F008CD025 /* NextViewController.swift in Sources */,
 				5FCC86B424502AFF008CD025 /* ThirdViewController.swift in Sources */,
 				5FCC8638244EB37D008CD025 /* TopViewController.swift in Sources */,
 				5FCC864D244EB5E9008CD025 /* SecondMainView.swift in Sources */,
+				5FCC870C24567BDE008CD025 /* EditMainView.swift in Sources */,
 				5FCC86B824502D3E008CD025 /* ThirdMainView.swift in Sources */,
 				5FCC865B244ED4C6008CD025 /* NextMainView.swift in Sources */,
 				5FCC8622244EA841008CD025 /* AppDelegate.swift in Sources */,
