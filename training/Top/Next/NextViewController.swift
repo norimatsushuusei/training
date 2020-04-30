@@ -31,6 +31,7 @@ extension NextViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setLabel()
+        getModel()
     }
 }
 // MARK: - Protocol
@@ -65,4 +66,13 @@ extension NextViewController {
     func setLabel(){
         nextMainView.descriptionLabel.text = postModel.description
     }
+    func getModel() {
+        PostModel.readAt(id: postModel.id, success: { (postModel) in
+            self.postModel = postModel
+        }) {
+            self.navigationController?.popViewController(animated: true)
+            self.animatorManager.navigationType = .slide_pop
+        }
+    }
+    
 }
