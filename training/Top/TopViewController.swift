@@ -8,6 +8,7 @@
 
 import UIKit
 import PGFramework
+import FirebaseAuth
 // MARK: - Property
 class TopViewController: BaseViewController {
     @IBOutlet weak var mainView: TopMainView!
@@ -29,6 +30,10 @@ extension TopViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        if Auth.auth().currentUser == nil {
+            let signUPViewController = SignUpViewController()
+            navigationController?.pushViewController(signUPViewController, animated: false)
+        }
         getModel()
     }
 }
