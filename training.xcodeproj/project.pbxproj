@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		172A8F7FDF1C668F7AD8AAB0 /* Pods_training.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1A9F80FD4F53F5763E199A /* Pods_training.framework */; };
+		5FA88A1A2464F0FE00B84ACE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA88A182464F0FE00B84ACE /* SignUpViewController.swift */; };
+		5FA88A1B2464F0FE00B84ACE /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA88A192464F0FE00B84ACE /* SignUpViewController.xib */; };
+		5FA88A1E2464F12500B84ACE /* SignUpMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA88A1C2464F12500B84ACE /* SignUpMainView.swift */; };
+		5FA88A1F2464F12500B84ACE /* SignUpMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA88A1D2464F12500B84ACE /* SignUpMainView.xib */; };
+		5FA88A212464F55700B84ACE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA88A202464F55700B84ACE /* UserModel.swift */; };
 		5FCC8622244EA841008CD025 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCC8621244EA841008CD025 /* AppDelegate.swift */; };
 		5FCC8624244EA841008CD025 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCC8623244EA841008CD025 /* SceneDelegate.swift */; };
 		5FCC8629244EA841008CD025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC8627244EA841008CD025 /* Main.storyboard */; };
@@ -41,6 +46,11 @@
 
 /* Begin PBXFileReference section */
 		3F30B664DC850BBDA824E7D8 /* Pods-training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-training.release.xcconfig"; path = "Target Support Files/Pods-training/Pods-training.release.xcconfig"; sourceTree = "<group>"; };
+		5FA88A182464F0FE00B84ACE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		5FA88A192464F0FE00B84ACE /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		5FA88A1C2464F12500B84ACE /* SignUpMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMainView.swift; sourceTree = "<group>"; };
+		5FA88A1D2464F12500B84ACE /* SignUpMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpMainView.xib; sourceTree = "<group>"; };
+		5FA88A202464F55700B84ACE /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		5FCC861E244EA841008CD025 /* training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = training.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FCC8621244EA841008CD025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FCC8623244EA841008CD025 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +107,25 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5FA88A162464F0B800B84ACE /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				5FA88A172464F0C600B84ACE /* SignUp */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		5FA88A172464F0C600B84ACE /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				5FA88A182464F0FE00B84ACE /* SignUpViewController.swift */,
+				5FA88A192464F0FE00B84ACE /* SignUpViewController.xib */,
+				5FA88A1C2464F12500B84ACE /* SignUpMainView.swift */,
+				5FA88A1D2464F12500B84ACE /* SignUpMainView.xib */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		5FCC8615244EA841008CD025 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +147,7 @@
 		5FCC8620244EA841008CD025 /* training */ = {
 			isa = PBXGroup;
 			children = (
+				5FA88A162464F0B800B84ACE /* Auth */,
 				5FCC86BA245039F4008CD025 /* Model */,
 				5FCC863E244EB3AF008CD025 /* Secomd */,
 				5FCC8635244EB366008CD025 /* Top */,
@@ -185,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				5FCC86BB24504372008CD025 /* PostModel.swift */,
+				5FA88A202464F55700B84ACE /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -274,6 +305,7 @@
 				5FCC862E244EA846008CD025 /* LaunchScreen.storyboard in Resources */,
 				5FCC864A244EB5D2008CD025 /* SecondViewController.xib in Resources */,
 				5FCC86B924502D3E008CD025 /* ThirdMainView.xib in Resources */,
+				5FA88A1F2464F12500B84ACE /* SignUpMainView.xib in Resources */,
 				5FCC870924567BA8008CD025 /* EditViewController.xib in Resources */,
 				5FCC8652244EB881008CD025 /* TopMainTableViewCell.xib in Resources */,
 				5FCC870D24567BDE008CD025 /* EditMainView.xib in Resources */,
@@ -282,6 +314,7 @@
 				5FCC8629244EA841008CD025 /* Main.storyboard in Resources */,
 				5FCC865C244ED4C6008CD025 /* NextMainView.xib in Resources */,
 				5FCC86B02450264D008CD025 /* GoogleService-Info.plist in Resources */,
+				5FA88A1B2464F0FE00B84ACE /* SignUpViewController.xib in Resources */,
 				5FCC8646244EB5A2008CD025 /* TopMainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,10 +373,13 @@
 				5FCC86BC24504372008CD025 /* PostModel.swift in Sources */,
 				5FCC8657244EC05F008CD025 /* NextViewController.swift in Sources */,
 				5FCC86B424502AFF008CD025 /* ThirdViewController.swift in Sources */,
+				5FA88A1E2464F12500B84ACE /* SignUpMainView.swift in Sources */,
 				5FCC8638244EB37D008CD025 /* TopViewController.swift in Sources */,
 				5FCC864D244EB5E9008CD025 /* SecondMainView.swift in Sources */,
+				5FA88A212464F55700B84ACE /* UserModel.swift in Sources */,
 				5FCC870C24567BDE008CD025 /* EditMainView.swift in Sources */,
 				5FCC86B824502D3E008CD025 /* ThirdMainView.swift in Sources */,
+				5FA88A1A2464F0FE00B84ACE /* SignUpViewController.swift in Sources */,
 				5FCC865B244ED4C6008CD025 /* NextMainView.swift in Sources */,
 				5FCC8622244EA841008CD025 /* AppDelegate.swift in Sources */,
 				5FCC8624244EA841008CD025 /* SceneDelegate.swift in Sources */,
