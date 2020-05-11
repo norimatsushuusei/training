@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController" customModule="training" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditProfileViewController" customModule="training" customModuleProvider="target">
             <connections>
-                <outlet property="headerView" destination="t4b-7s-cFY" id="BSR-S3-LR5"/>
-                <outlet property="mainView" destination="9CY-u2-gWg" id="q06-L4-upA"/>
+                <outlet property="headerView" destination="mq1-bL-1Bc" id="ZhB-eb-Tkk"/>
+                <outlet property="mainView" destination="Hf0-Sp-rtO" id="soJ-H8-Cqt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,30 +19,30 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t4b-7s-cFY" customClass="HeaderView" customModule="PGFramework">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mq1-bL-1Bc" customClass="HeaderView" customModule="PGFramework">
                     <rect key="frame" x="0.0" y="44" width="414" height="48"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="48" id="DCZ-b7-XAL"/>
+                        <constraint firstAttribute="height" constant="48" id="RkJ-S8-lrb"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9CY-u2-gWg" customClass="SecondMainView" customModule="training" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hf0-Sp-rtO" customClass="EditProfileMainView" customModule="training" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="92" width="414" height="770"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="9CY-u2-gWg" firstAttribute="top" secondItem="t4b-7s-cFY" secondAttribute="bottom" id="5ar-QE-9A7"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="t4b-7s-cFY" secondAttribute="trailing" id="9iu-Zm-zmy"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9CY-u2-gWg" secondAttribute="trailing" id="OBZ-39-rsv"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9CY-u2-gWg" secondAttribute="bottom" id="d3m-5G-lNa"/>
-                <constraint firstItem="t4b-7s-cFY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="kPP-Wr-hzc"/>
-                <constraint firstItem="t4b-7s-cFY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wgo-oY-IdK"/>
-                <constraint firstItem="9CY-u2-gWg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ww3-W7-UvT"/>
+                <constraint firstItem="mq1-bL-1Bc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="C02-CY-T4t"/>
+                <constraint firstItem="mq1-bL-1Bc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="OQp-Sk-zPN"/>
+                <constraint firstItem="Hf0-Sp-rtO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Rjw-Li-JZN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Hf0-Sp-rtO" secondAttribute="trailing" id="Spl-z1-07D"/>
+                <constraint firstItem="Hf0-Sp-rtO" firstAttribute="top" secondItem="mq1-bL-1Bc" secondAttribute="bottom" id="jdJ-2Q-byQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mq1-bL-1Bc" secondAttribute="trailing" id="vNx-tg-It1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Hf0-Sp-rtO" secondAttribute="bottom" id="xzk-dT-HdW"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+            <point key="canvasLocation" x="139" y="107"/>
         </view>
     </objects>
 </document>

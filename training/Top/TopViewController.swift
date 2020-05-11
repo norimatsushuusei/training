@@ -20,9 +20,9 @@ class TopViewController: BaseViewController {
 extension TopViewController {
     override func loadView() {
         super.loadView()
+        tabBarController?.tabBar.isHidden = false
         setDelegate()
         setHeaderView()
-        
 
     }
     override func viewDidLoad() {
@@ -30,10 +30,12 @@ extension TopViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+       // UserModel.logOut {}
         if Auth.auth().currentUser == nil {
             let signUPViewController = SignUpViewController()
             navigationController?.pushViewController(signUPViewController, animated: false)
         }
+        
         getModel()
     }
 }

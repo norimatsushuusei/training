@@ -2,14 +2,16 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondMainView" customModule="training" customModuleProvider="target">
             <connections>
+                <outlet property="discriptionLabel" destination="uZd-OP-6M7" id="Gyr-hO-upo"/>
                 <outlet property="iconView" destination="LE6-zI-D8e" id="t7f-Zg-awx"/>
+                <outlet property="touchedEditProfileButton" destination="a7B-hZ-c5r" id="h2U-jH-r3w"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -36,6 +38,14 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7B-hZ-c5r">
+                    <rect key="frame" x="70" y="295" width="265" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="プロフィール編集"/>
+                    <connections>
+                        <action selector="touchedEditProfileButton:" destination="-1" eventType="touchUpInside" id="kDl-1W-uWj"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
@@ -44,6 +54,7 @@
                 <constraint firstItem="67h-Zz-XNk" firstAttribute="top" secondItem="LE6-zI-D8e" secondAttribute="bottom" constant="23" id="42E-uV-np0"/>
                 <constraint firstItem="LE6-zI-D8e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="9DC-WH-o7I"/>
                 <constraint firstItem="67h-Zz-XNk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="LGf-4x-bn8"/>
+                <constraint firstItem="uZd-OP-6M7" firstAttribute="leading" secondItem="LE6-zI-D8e" secondAttribute="trailing" constant="34" id="gqo-r8-VhX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="67h-Zz-XNk" secondAttribute="trailing" constant="140" id="ond-Nf-hmR"/>
                 <constraint firstItem="LE6-zI-D8e" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="31" id="vWy-Q3-Fnt"/>
             </constraints>

@@ -8,37 +8,63 @@
 
 import UIKit
 import PGFramework
+import FirebaseAuth
 // MARK: - Property
 class SecondViewController: BaseViewController {
+    @IBOutlet weak var mainView: SecondMainView!
     @IBOutlet weak var headerView: HeaderView!
-    @IBOutlet weak var button: UIButton!
+    
+    var userModel: UserModel = UserModel()
 }
 // MARK: - Life cycle
 extension SecondViewController {
     override func loadView() {
         super.loadView()
+        setDelegate()
         setHeaderView()
-        setLayout()
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        if Auth.auth().currentUser == nil {
+            let signUpViewController = SignUpViewController()
+            navigationController?.pushViewController(signUpViewController, animated: false)
+        }
+      
+            getModel()
+        
     }
 }
 // MARK: - Protocol
-extension SecondViewController {
+extension SecondViewController :SecondMainViewDelegate{
+    func touchedEditProfileButton() {
+        let editProfileViewController = EditProfileViewController()
+        editProfileViewController.userModel = userModel
+        editProfileViewController.modalPresentationStyle = .fullScreen
+        present(editProfileViewController, animated: true, completion: nil)
+    }
+    
 }
 // MARK: - method
 extension SecondViewController {
+    func setDelegate() {
+        mainView.delegate = self
+    }
     func setHeaderView(){
         headerView.setCenter(text: "Mypage", fontSize: 18, color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
+        headerView.setLeft(text: "")
     }
     
-    func setLayout() {
-        button.layer.borderWidth = 1
-        button.layer.cornerRadius = 10
-        button.layer.borderColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+
+    
+    func getModel(){
+        UserModel.readMe { (userModel) in
+            self.mainView.getModel(userModel: userModel)
+            self.userModel = userModel
+        }
     }
 }
