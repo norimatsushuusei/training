@@ -28,6 +28,12 @@ extension SignUpViewController {
 }
 // MARK: - Protocol
 extension SignUpViewController :SignUpMainViewDelegate{
+    func touchedSignInButton() {
+        let signInViewController = SignInViewController()
+        navigationController?.pushViewController(signInViewController, animated: true)
+        animatorManager.navigationType = .slide_push
+    }
+    
     func touchedSignUpButton() {
         let userModel: UserModel = UserModel()
         userModel.nickname = mainView.userNameTextField.text

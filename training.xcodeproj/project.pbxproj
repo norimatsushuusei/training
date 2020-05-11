@@ -13,6 +13,14 @@
 		5FA88A1E2464F12500B84ACE /* SignUpMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA88A1C2464F12500B84ACE /* SignUpMainView.swift */; };
 		5FA88A1F2464F12500B84ACE /* SignUpMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA88A1D2464F12500B84ACE /* SignUpMainView.xib */; };
 		5FA88A212464F55700B84ACE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA88A202464F55700B84ACE /* UserModel.swift */; };
+		5FA88A252468E4B300B84ACE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA88A232468E4B300B84ACE /* EditProfileViewController.swift */; };
+		5FA88A262468E4B300B84ACE /* EditProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA88A242468E4B300B84ACE /* EditProfileViewController.xib */; };
+		5FA88A292468E4E700B84ACE /* EditProfileMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA88A272468E4E700B84ACE /* EditProfileMainView.swift */; };
+		5FA88A2A2468E4E700B84ACE /* EditProfileMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA88A282468E4E700B84ACE /* EditProfileMainView.xib */; };
+		5FA88A2E24691DE100B84ACE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA88A2C24691DE100B84ACE /* SignInViewController.swift */; };
+		5FA88A2F24691DE100B84ACE /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA88A2D24691DE100B84ACE /* SignInViewController.xib */; };
+		5FA88A3224691E0300B84ACE /* SignInMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA88A3024691E0300B84ACE /* SignInMainView.swift */; };
+		5FA88A3324691E0300B84ACE /* SignInMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA88A3124691E0300B84ACE /* SignInMainView.xib */; };
 		5FCC8622244EA841008CD025 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCC8621244EA841008CD025 /* AppDelegate.swift */; };
 		5FCC8624244EA841008CD025 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCC8623244EA841008CD025 /* SceneDelegate.swift */; };
 		5FCC8629244EA841008CD025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC8627244EA841008CD025 /* Main.storyboard */; };
@@ -51,6 +59,14 @@
 		5FA88A1C2464F12500B84ACE /* SignUpMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMainView.swift; sourceTree = "<group>"; };
 		5FA88A1D2464F12500B84ACE /* SignUpMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpMainView.xib; sourceTree = "<group>"; };
 		5FA88A202464F55700B84ACE /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		5FA88A232468E4B300B84ACE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		5FA88A242468E4B300B84ACE /* EditProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileViewController.xib; sourceTree = "<group>"; };
+		5FA88A272468E4E700B84ACE /* EditProfileMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileMainView.swift; sourceTree = "<group>"; };
+		5FA88A282468E4E700B84ACE /* EditProfileMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileMainView.xib; sourceTree = "<group>"; };
+		5FA88A2C24691DE100B84ACE /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		5FA88A2D24691DE100B84ACE /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		5FA88A3024691E0300B84ACE /* SignInMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInMainView.swift; sourceTree = "<group>"; };
+		5FA88A3124691E0300B84ACE /* SignInMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInMainView.xib; sourceTree = "<group>"; };
 		5FCC861E244EA841008CD025 /* training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = training.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FCC8621244EA841008CD025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FCC8623244EA841008CD025 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +126,7 @@
 		5FA88A162464F0B800B84ACE /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				5FA88A2B24691DB100B84ACE /* SignIn */,
 				5FA88A172464F0C600B84ACE /* SignUp */,
 			);
 			path = Auth;
@@ -124,6 +141,28 @@
 				5FA88A1D2464F12500B84ACE /* SignUpMainView.xib */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		5FA88A222468E47A00B84ACE /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				5FA88A232468E4B300B84ACE /* EditProfileViewController.swift */,
+				5FA88A242468E4B300B84ACE /* EditProfileViewController.xib */,
+				5FA88A272468E4E700B84ACE /* EditProfileMainView.swift */,
+				5FA88A282468E4E700B84ACE /* EditProfileMainView.xib */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		5FA88A2B24691DB100B84ACE /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				5FA88A2C24691DE100B84ACE /* SignInViewController.swift */,
+				5FA88A2D24691DE100B84ACE /* SignInViewController.xib */,
+				5FA88A3024691E0300B84ACE /* SignInMainView.swift */,
+				5FA88A3124691E0300B84ACE /* SignInMainView.xib */,
+			);
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 		5FCC8615244EA841008CD025 = {
@@ -147,8 +186,8 @@
 		5FCC8620244EA841008CD025 /* training */ = {
 			isa = PBXGroup;
 			children = (
-				5FA88A162464F0B800B84ACE /* Auth */,
 				5FCC86BA245039F4008CD025 /* Model */,
+				5FA88A162464F0B800B84ACE /* Auth */,
 				5FCC863E244EB3AF008CD025 /* Secomd */,
 				5FCC8635244EB366008CD025 /* Top */,
 				5FCC8621244EA841008CD025 /* AppDelegate.swift */,
@@ -181,6 +220,7 @@
 		5FCC863E244EB3AF008CD025 /* Secomd */ = {
 			isa = PBXGroup;
 			children = (
+				5FA88A222468E47A00B84ACE /* EditProfile */,
 				5FCC8647244EB5D2008CD025 /* SecondViewController.swift */,
 				5FCC8648244EB5D2008CD025 /* SecondViewController.xib */,
 				5FCC864B244EB5E9008CD025 /* SecondMainView.swift */,
@@ -299,14 +339,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FA88A2F24691DE100B84ACE /* SignInViewController.xib in Resources */,
 				5FCC8639244EB37D008CD025 /* TopViewController.xib in Resources */,
 				5FCC864E244EB5E9008CD025 /* SecondMainView.xib in Resources */,
 				5FCC86B524502AFF008CD025 /* ThirdViewController.xib in Resources */,
 				5FCC862E244EA846008CD025 /* LaunchScreen.storyboard in Resources */,
 				5FCC864A244EB5D2008CD025 /* SecondViewController.xib in Resources */,
 				5FCC86B924502D3E008CD025 /* ThirdMainView.xib in Resources */,
+				5FA88A3324691E0300B84ACE /* SignInMainView.xib in Resources */,
 				5FA88A1F2464F12500B84ACE /* SignUpMainView.xib in Resources */,
 				5FCC870924567BA8008CD025 /* EditViewController.xib in Resources */,
+				5FA88A2A2468E4E700B84ACE /* EditProfileMainView.xib in Resources */,
+				5FA88A262468E4B300B84ACE /* EditProfileViewController.xib in Resources */,
 				5FCC8652244EB881008CD025 /* TopMainTableViewCell.xib in Resources */,
 				5FCC870D24567BDE008CD025 /* EditMainView.xib in Resources */,
 				5FCC862B244EA846008CD025 /* Assets.xcassets in Resources */,
@@ -376,6 +420,9 @@
 				5FA88A1E2464F12500B84ACE /* SignUpMainView.swift in Sources */,
 				5FCC8638244EB37D008CD025 /* TopViewController.swift in Sources */,
 				5FCC864D244EB5E9008CD025 /* SecondMainView.swift in Sources */,
+				5FA88A2E24691DE100B84ACE /* SignInViewController.swift in Sources */,
+				5FA88A3224691E0300B84ACE /* SignInMainView.swift in Sources */,
+				5FA88A252468E4B300B84ACE /* EditProfileViewController.swift in Sources */,
 				5FA88A212464F55700B84ACE /* UserModel.swift in Sources */,
 				5FCC870C24567BDE008CD025 /* EditMainView.swift in Sources */,
 				5FCC86B824502D3E008CD025 /* ThirdMainView.swift in Sources */,
@@ -385,6 +432,7 @@
 				5FCC8624244EA841008CD025 /* SceneDelegate.swift in Sources */,
 				5FCC8649244EB5D2008CD025 /* SecondViewController.swift in Sources */,
 				5FCC8645244EB5A2008CD025 /* TopMainView.swift in Sources */,
+				5FA88A292468E4E700B84ACE /* EditProfileMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

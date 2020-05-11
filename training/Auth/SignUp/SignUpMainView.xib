@@ -51,6 +51,14 @@
                         <action selector="touchedSignUpButton:" destination="-1" eventType="touchUpInside" id="85o-SW-ecJ"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HL2-af-lPw">
+                    <rect key="frame" x="218" y="547" width="123" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="ログインはこちら"/>
+                    <connections>
+                        <action selector="touchedSignInButton:" destination="-1" eventType="touchUpInside" id="6M6-dZ-2hk"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
