@@ -15,6 +15,7 @@ class SecondViewController: BaseViewController {
     @IBOutlet weak var headerView: HeaderView!
     
     var userModel: UserModel = UserModel()
+    var postModel: PostModel = PostModel()
 }
 // MARK: - Life cycle
 extension SecondViewController {
@@ -63,8 +64,18 @@ extension SecondViewController {
     
     func getModel(){
         UserModel.readMe { (userModel) in
-            self.mainView.getModel(userModel: userModel)
-            self.userModel = userModel
+           
+            
+            UserModel.readAt(userId: userModel.photo_path!) { (userModel) in
+                if let icon = userModel.photo_path {
+                    self.postModel.post_user_icon = icon
+                }
+                
+                self.mainView.getModel(userModel: userModel)
+                self.userModel = userModel
+                
+            }
         }
+        mainView.getModel(userModel: userModel)
     }
 }

@@ -8,13 +8,15 @@
 
 import UIKit
 import PGFramework
+import FirebaseAuth
 // MARK: - Property
 class EditProfileViewController: BaseViewController {
     @IBOutlet weak var headerView: HeaderView!
     @IBOutlet weak var mainView: EditProfileMainView!
     
-   // var postModel: PostModel = PostModel()
+   
     var userModel: UserModel = UserModel()
+    var postModel: PostModel = PostModel()
 }
 // MARK: - Life cycle
 extension EditProfileViewController {
@@ -30,6 +32,13 @@ extension EditProfileViewController {
         super.viewWillAppear(animated)
         giveModel()
     }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[.originalImage] as? UIImage {
+            mainView.iconView.image = image
+            picker.dismiss(animated: true, completion: nil)
+        }
+    }
+    
 }
 // MARK: - Protocol
 extension EditProfileViewController :HeaderViewDelegate{
@@ -40,13 +49,19 @@ extension EditProfileViewController :HeaderViewDelegate{
         if let text = mainView.textField.text {
             userModel.nickname = text
         }
-        UserModel.update(request: userModel) {
+        
+        let image = mainView.iconView.image
+        UserModel.update(request: userModel, image: image) {
             self.dismiss(animated: true, completion: nil)
         }
     }
 }
 
 extension EditProfileViewController: EditProfileMainViewDelegate {
+    func editIconButton() {
+        useCamera()
+    }
+    
     func touchedLogoutButton() {
         UserModel.logOut {
             self.dismiss(animated: true, completion: nil)

@@ -9,7 +9,8 @@
 import UIKit
 import PGFramework
 protocol EditProfileMainViewDelegate: NSObjectProtocol{
-    func touchedLogoutButton() 
+    func touchedLogoutButton()
+    func editIconButton()
 }
 extension EditProfileMainViewDelegate {
 }
@@ -20,6 +21,9 @@ class EditProfileMainView: BaseView {
     @IBOutlet weak var textField: UITextField!
     @IBAction func touchedLogoutButton(_ sender: UIButton) {
         if let delegate  = delegate{delegate.touchedLogoutButton()}
+    }
+    @IBAction func editIconButton(_ sender: UIButton) {
+        if let delegate = delegate{delegate.editIconButton()}
     }
 }
 // MARK: - Life cycle
@@ -40,5 +44,20 @@ extension EditProfileMainView {
     
     func updateView(userModel: UserModel) {
         textField.text = userModel.description
+        
+        
     }
+    func updateIcon(userModel: UserModel) {
+        if let url = URL(string: userModel.photo_path!) {
+            iconView.af_setImage(withURL: url)
+        }
+    }
+    
+ //   func updateIcon(postModel: PostModel) {
+  // if let url = URL(string: postModel.image_paths[0]) {
+   //         iconView.af_setImage(withURL: url)
+    //    }
+    //}
 }
+
+

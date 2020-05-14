@@ -44,5 +44,15 @@ extension SecondMainView {
     }
     func getModel(userModel: UserModel){
         discriptionLabel.text = userModel.nickname
+        if let photo_path = userModel.photo_path {
+            if let url = URL(string: photo_path) {
+                iconView.af_setImage(withURL: url)
+            }
+        }
+        
     }
+
+        
+      
+        
     }
