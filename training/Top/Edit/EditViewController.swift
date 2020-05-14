@@ -27,7 +27,14 @@ extension EditViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         giveModel()
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[.originalImage] as? UIImage {
+            editMainView.editImageView.image = image
+            picker.dismiss(animated: true, completion: nil)
+        }
     }
 }
 // MARK: - Protocol
@@ -39,14 +46,22 @@ extension EditViewController :HeaderViewDelegate {
         if let text = editMainView.textField.text {
         postModel.description = text
         }
-        PostModel.update(request: postModel) {
+        var images: [UIImage] = []
+        if let image = editMainView.editImageView.image {
+            images.append(image)
+        }
+        PostModel.update(request: postModel, images: images) {
             self.dismiss(animated: true, completion: nil)
         }
-        
+       
     }
 }
 
 extension EditViewController :EditMainViewDelegate {
+    func touchedEditImageButton() {
+        useCamera()
+    }
+    
     func touchedDeleteButton() {
         PostModel.delete(id: postModel.id) {
             self.dismiss(animated: true, completion: nil)

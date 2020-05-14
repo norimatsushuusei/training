@@ -15,6 +15,7 @@ class NextViewController: BaseViewController {
     
     
     var postModel: PostModel = PostModel()
+    var userModel: UserModel = UserModel()
 }
 // MARK: - Life cycle
 extension NextViewController {
@@ -65,14 +66,21 @@ extension NextViewController {
     }
     func setLabel(){
         nextMainView.descriptionLabel.text = postModel.description
+        nextMainView.userName.text = postModel.post_user_name
     }
+   
     func getModel() {
         PostModel.readAt(id: postModel.id, success: { (postModel) in
             self.postModel = postModel
-        }) {
+        }){
             self.navigationController?.popViewController(animated: true)
             self.animatorManager.navigationType = .slide_pop
         }
+
+        
+        
+        nextMainView.updateView(postModel: postModel)
+        
+        
     }
-    
 }

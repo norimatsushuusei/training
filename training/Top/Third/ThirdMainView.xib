@@ -2,13 +2,14 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThirdMainView" customModule="training" customModuleProvider="target">
             <connections>
+                <outlet property="postImageView" destination="Wb3-YE-BFZ" id="FoO-4h-Tsr"/>
                 <outlet property="textField" destination="RhW-ed-oHb" id="Q4o-8k-rxf"/>
             </connections>
         </placeholder>
@@ -17,8 +18,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gazou" translatesAutoresizingMaskIntoConstraints="NO" id="Wb3-YE-BFZ">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wb3-YE-BFZ">
                     <rect key="frame" x="0.0" y="44" width="414" height="220"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="220" id="OMZ-Jr-hDu"/>
                     </constraints>
@@ -28,21 +30,34 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cj8-qM-3m1">
+                    <rect key="frame" x="0.0" y="44" width="414" height="220"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                    <state key="normal" title="＋">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="touchedAddImageButton:" destination="-1" eventType="touchUpInside" id="Szm-jn-1EK"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="RhW-ed-oHb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="04e-U9-h4V"/>
+                <constraint firstItem="Cj8-qM-3m1" firstAttribute="width" secondItem="Wb3-YE-BFZ" secondAttribute="width" id="0FL-Az-2d7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RhW-ed-oHb" secondAttribute="trailing" constant="20" id="5Uo-4a-qaM"/>
+                <constraint firstItem="Cj8-qM-3m1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="D7T-Y3-xOX"/>
+                <constraint firstItem="Cj8-qM-3m1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Eqd-yL-3wy"/>
+                <constraint firstItem="Cj8-qM-3m1" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Ze1-vT-Q4C"/>
                 <constraint firstItem="Wb3-YE-BFZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="lxU-Da-ryO"/>
                 <constraint firstItem="RhW-ed-oHb" firstAttribute="top" secondItem="Wb3-YE-BFZ" secondAttribute="bottom" constant="20" id="ncj-Zm-Z5C"/>
                 <constraint firstItem="Wb3-YE-BFZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="p5w-Kz-HLp"/>
                 <constraint firstItem="Wb3-YE-BFZ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="qMi-yg-QRt"/>
+                <constraint firstItem="RhW-ed-oHb" firstAttribute="top" secondItem="Cj8-qM-3m1" secondAttribute="bottom" constant="20" id="tPm-uw-TdB"/>
+                <constraint firstItem="Cj8-qM-3m1" firstAttribute="height" secondItem="Wb3-YE-BFZ" secondAttribute="height" id="wcQ-ab-rE0"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="106.47321428571428"/>
         </view>
     </objects>
-    <resources>
-        <image name="gazou" width="940" height="626"/>
-    </resources>
 </document>

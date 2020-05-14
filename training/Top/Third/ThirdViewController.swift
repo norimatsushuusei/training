@@ -8,6 +8,7 @@
 
 import UIKit
 import PGFramework
+import FirebaseAuth
 // MARK: - Property
 class ThirdViewController: BaseViewController {
     @IBOutlet weak var thirdMainView: ThirdMainView!
@@ -28,6 +29,12 @@ extension ThirdViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[.originalImage] as? UIImage {
+            thirdMainView.postImageView.image = image
+            picker.dismiss(animated: true, completion: nil)
+        }
+    }
 }
 // MARK: - Protocol
 extension ThirdViewController :HeaderViewDelegate{
@@ -44,10 +51,25 @@ extension ThirdViewController :HeaderViewDelegate{
           postModel.description = text
         }
         
-        PostModel.create(request: postModel){
+        var images: [UIImage] = []
+        if let image = thirdMainView.postImageView.image {
+            images.append(image)
+        }
+        
+        if let uid = Auth.auth().currentUser?.uid {
+            postModel.post_user_id = uid
+        }
+        
+        PostModel.create(request: postModel, images: images){
         self.navigationController?.popViewController(animated: true)
         self.animatorManager.navigationType = .slide_pop
         }
+    }
+}
+
+extension ThirdViewController: ThirdMainViewDelegate{
+    func touchedAddImageButton() {
+        useCamera()
     }
 }
 // MARK: - method
@@ -59,5 +81,6 @@ extension ThirdViewController {
     }
     func setDelegate() {
         headerView.delegate = self
+        thirdMainView.delegate = self
     }
 }

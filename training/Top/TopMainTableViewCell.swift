@@ -17,6 +17,8 @@ class TopMainTableViewCell: BaseTableViewCell {
     weak var delegate: TopMainTableViewCellDelegate? = nil
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var postImage: UIImageView!
+    @IBOutlet weak var userName: UILabel!
 }
 // MARK: - Life cycle
 extension TopMainTableViewCell {
@@ -35,5 +37,15 @@ extension TopMainTableViewCell {
     }
     func updateCell(postModel: PostModel) {
         descriptionLabel.text = postModel.description
+        
+        if let url = URL(string: postModel.image_paths[0]) {
+            postImage.af_setImage(withURL: url)
+        }
+        
+        if postModel.post_user_name == "" {
+            userName.text = "メンバーがいません"
+        } else {
+            userName.text = postModel.post_user_name
+        }
     }
 }

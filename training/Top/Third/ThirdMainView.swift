@@ -9,13 +9,18 @@
 import UIKit
 import PGFramework
 protocol ThirdMainViewDelegate: NSObjectProtocol{
+    func touchedAddImageButton()
 }
 extension ThirdMainViewDelegate {
 }
 // MARK: - Property
 class ThirdMainView: BaseView{
     weak var delegate: ThirdMainViewDelegate? = nil
+    @IBOutlet weak var postImageView: UIImageView!
     @IBOutlet weak var textField: UITextField!
+    @IBAction func touchedAddImageButton(_ sender: UIButton) {
+        if let delegate = delegate{delegate.touchedAddImageButton()}
+    }
 }
 // MARK: - Life cycle
 extension ThirdMainView {

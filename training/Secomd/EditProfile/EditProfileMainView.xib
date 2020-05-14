@@ -41,6 +41,15 @@
                         <constraint firstAttribute="width" secondItem="Exf-CC-pjB" secondAttribute="height" multiplier="1:1" id="yum-yV-LEA"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8V-KB-vln">
+                    <rect key="frame" x="129" y="86" width="158" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="＋"/>
+                    <connections>
+                        <action selector="editIconButton:" destination="-1" eventType="touchUpInside" id="d2S-dR-wYN"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>

@@ -17,12 +17,15 @@ class NextMainView: BaseView {
     weak var delegate: NextMainViewDelegate? = nil
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var postImage: UIImageView!
+    @IBOutlet weak var userName: UILabel!
 }
 // MARK: - Life cycle
 extension NextMainView {
     override func awakeFromNib() {
         super.awakeFromNib()
         setLayout()
+    
     }
 }
 // MARK: - Protocol
@@ -32,5 +35,10 @@ extension NextMainView {
 extension NextMainView {
     func setLayout(){
         iconView.layer.cornerRadius = iconView.frame.height / 2
+    }
+    func updateView(postModel: PostModel){
+        if let url = URL(string: postModel.image_paths[0]) {
+            postImage.af_setImage(withURL: url)
+        }
     }
 }

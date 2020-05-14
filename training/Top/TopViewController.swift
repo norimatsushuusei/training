@@ -73,9 +73,26 @@ extension TopViewController {
         //    for postModel in postModels {
           //      print("DESC: ",postModel.description)
             //}
-            self.postModels = postModels
             
-            self.mainView.getModel(postModels: postModels)
+            for postModel in postModels {
+                if postModel.post_user_id != "" {
+                    UserModel.readAt(userId: postModel.post_user_id) { (userModel) in
+                        if let name = userModel.nickname {
+                            postModel.post_user_name = name
+                        }
+                        if let icon = userModel.photo_path {
+                            postModel.post_user_icon = icon
+                        }
+                        
+                        self.postModels = postModels
+                        self.mainView.getModel(postModels: postModels)
+                    }
+                } else {
+                    self.postModels = postModels
+                    self.mainView.getModel(postModels: postModels)
+                }
+               
+            }
         }
     }
 }
